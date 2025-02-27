@@ -1,4 +1,6 @@
 Name: Postgres Query Executor
+Metadata: category: Database
+Metadata: icon: https://www.postgresql.org/media/img/about/press/elephant.png
 Description: Execute SQL queries against a Postgres database
 Param: query: The SQL query to execute
 Param: host: The Postgres host

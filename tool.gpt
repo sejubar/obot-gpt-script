@@ -1,0 +1,9 @@
+Name: Postgres Query Executor
+Description: Execute SQL queries against a Postgres database
+Param: query: The SQL query to execute
+Param: host: The Postgres host
+Param: database: The Postgres database
+Param: user: The Postgres username
+Param: password: The Postgres password
+
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/postgres_query_executor.py

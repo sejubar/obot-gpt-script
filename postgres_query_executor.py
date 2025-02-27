@@ -10,12 +10,12 @@ def serialize_datetime(obj):
     raise TypeError(f"Type {obj.__class__.__name__} not serializable")
 
 # Extract the tool's arguments from the env
-query = os.getenv('query')
-host = os.getenv('host')
-port = os.getenv('port')
-database = os.getenv('database')
-user = os.getenv('user')
-password = os.getenv('password')
+query = os.getenv('POSTGRES_QUERY')
+host = os.getenv('POSTGRES_HOST')
+port = os.getenv('POSTGRES_PORT')
+database = os.getenv('POSTGRES_DATABASE')
+user = os.getenv('POSTGRES_USERNAME')
+password = os.getenv('POSTGRES_PASSWORD')
 
 # Establish a connection to the Postgres database
 conn = psycopg2.connect(
@@ -47,5 +47,3 @@ else:
 # Close the cursor and connection
 cur.close()
 conn.close()
-# Return the results as JSON
-# print(json.dumps(results, default=serialize_datetime))

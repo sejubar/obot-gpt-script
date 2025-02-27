@@ -26,6 +26,8 @@ To insert a new record into the car_maintainance_invoices table:
 query="INSERT INTO public.car_maintainance_invoices( entry_id, created_date, comment, invoice_content) VALUES (DEFAULT, DEFAULT, DEFAULT,'{ \"service_receipt\": { \"invoice_number\": \"J-0046\"} }');" host='127.0.0.1' port='5432' database='obotdemo' user='postgres' password='fortune2' python postgres_query_executor.py
 ```
 
+query="INSERT INTO public.car_maintainance_invoices( entry_id, created_date, comment, invoice_content) VALUES (DEFAULT, DEFAULT, DEFAULT,'{ \"service_receipt\": { \"invoice_number\": \"J-0046\"} }');" host='127.0.0.1' port='5432' database='obotdemo' user='postgres' password='fortune2'
+
 This will execute the INSERT query and return a success message if the query is executed successfully.
 Requirements
 

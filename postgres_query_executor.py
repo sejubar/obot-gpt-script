@@ -10,7 +10,7 @@ def serialize_datetime(obj):
     raise TypeError(f"Type {obj.__class__.__name__} not serializable")
 
 # Extract the tool's arguments from the env
-query = os.getenv('POSTGRES_QUERY')
+query = os.getenv('QUERY')
 host = os.getenv('POSTGRES_HOST')
 port = os.getenv('POSTGRES_PORT')
 database = os.getenv('POSTGRES_DATABASE')

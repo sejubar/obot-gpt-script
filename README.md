@@ -23,7 +23,7 @@ password: The Postgres password
 To insert a new record into the car_maintainance_invoices table:
 
 ```Bash
-query="INSERT INTO public.car_maintainance_invoices( entry_id, created_date, comment, invoice_content) VALUES (DEFAULT, DEFAULT, DEFAULT,'{ \"service_receipt\": { \"invoice_number\": \"J-0046\"} }');" host='127.0.0.1' port='5432' database='obotdemo' user='postgres' password='fortune2' python postgres_query_executor.py
+POSTGRES_QUERY="INSERT INTO public.car_maintainance_invoices( entry_id, created_date, comment, invoice_content) VALUES (DEFAULT, DEFAULT, DEFAULT,'{ \"service_receipt\": { \"invoice_number\": \"J-0046\"} }');" POSTGRES_HOST='127.0.0.1' POSTGRES_PORT='5432' POSTGRES_DATABASE='obotdemo' POSTGRES_USERNAME='postgres' POSTGRES_PASSWORD='fortune2' python postgres_query_executor.py
 ```
 
 query="INSERT INTO public.car_maintainance_invoices( entry_id, created_date, comment, invoice_content) VALUES (DEFAULT, DEFAULT, DEFAULT,'{ \"service_receipt\": { \"invoice_number\": \"J-0046\"} }');" host='127.0.0.1' port='5432' database='obotdemo' user='postgres' password='fortune2'

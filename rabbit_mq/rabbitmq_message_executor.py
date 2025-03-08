@@ -6,6 +6,8 @@ from kombu import Connection, Queue
 queue_name = os.getenv('RABBITMQ_QUEUE')
 message = os.getenv('RABBITMQ_MESSAGE')
 broker_url = os.getenv('RABBITMQ_BROKER_URL')
+query = message 
+host = broker_url
 action = os.getenv('RABBITMQ_ACTION', 'publish')  # Default action is publish
 
 # Establish a connection to the RabbitMQ server

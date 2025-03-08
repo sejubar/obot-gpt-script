@@ -4,14 +4,12 @@ from kombu import Connection, Queue
 
 # Extract the tool's arguments from the env
 queue_name = os.getenv('RABBITMQ_QUEUE')
-message = os.getenv('RABBITMQ_MESSAGE')
-broker_url = os.getenv('RABBITMQ_BROKER_URL')
-query = message 
-host = broker_url
+query = os.getenv('RABBITMQ_MESSAGE')
+host = os.getenv('RABBITMQ_host')
 action = os.getenv('RABBITMQ_ACTION', 'publish')  # Default action is publish
 
 # Establish a connection to the RabbitMQ server
-with Connection(broker_url) as conn:
+with Connection(host) as conn:
     channel = conn.channel
 
     # Create a queue
@@ -26,7 +24,7 @@ with Connection(broker_url) as conn:
             producer = conn.Producer(serializer='json')
             producer.publish(body=message,
                                 routing_key=queue_name)
-            print("Message published successfully!")
+            print("query published successfully!")
         elif action == 'consume':
             # Consume
             consumed_messages = []

@@ -1,4 +1,4 @@
-# rabbitmq_tool/rabbitmq/tool.gpt
+---
 Name: RabbitMQ Message Executor
 Description: Send messages to a RabbitMQ exchange
 Credential: ./credential

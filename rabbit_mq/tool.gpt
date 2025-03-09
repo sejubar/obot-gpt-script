@@ -7,10 +7,10 @@ Param: message: The message to send to the RabbitMQ queue
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/rabbitmq_message_executor.py
 
----  
+---
 !metadata:*:category
 Message Queue
 
----  
+---
 !metadata:*:icon
 https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/rabbitmq.svg

@@ -2,7 +2,8 @@
 Name: RabbitMQ Message Executor
 Description: Send messages to a RabbitMQ exchange
 Credential: ./credential
-Param: message: The message to send to the RabbitMQ exchange
+Param: queue_name: The RabbitMQ queue to send message to
+Param: message: The message to send to the RabbitMQ queue
 
 #!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/rabbitmq_message_executor.py
 

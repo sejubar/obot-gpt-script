@@ -5,7 +5,7 @@ Description: Auth provider for Keycloak
 Metadata: noUserAuth: keycloak-auth-provider
 Credential: github.com/obot-platform/tools/placeholder-credential as keycloak-auth-provider
 
-#!sys.daemon ${GPTSCRIPT_TOOL_DIR}/tool.py
+#!sys.daemon ${GPTSCRIPT_TOOL_DIR}/keycloak-provider.py
 
 ---
 !metadata:Keycloak:providerMeta

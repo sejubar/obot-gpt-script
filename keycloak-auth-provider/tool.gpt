@@ -1,0 +1,56 @@
+# keycloak-auth-provider/tool.gpt
+
+Name: Keycloak
+Description: Auth provider for Keycloak
+Metadata: noUserAuth: keycloak-auth-provider
+Credential: github.com/obot-platform/tools/placeholder-credential as keycloak-auth-provider
+
+#!sys.daemon ${GPTSCRIPT_TOOL_DIR}/tool.py
+
+---
+!metadata:Keycloak:providerMeta
+{
+    "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/keycloak.svg",
+    "link": "https://www.keycloak.org/",
+    "envVars": [
+        {
+            "name": "OBOT_KEYCLOAK_AUTH_PROVIDER_CLIENT_ID",
+            "friendlyName": "Client ID",
+            "description": "Client ID for your Keycloak OAuth app.",
+            "sensitive": false
+        },
+        {
+            "name": "OBOT_KEYCLOAK_AUTH_PROVIDER_CLIENT_SECRET",
+            "friendlyName": "Client Secret",
+            "description": "Client secret for your Keycloak OAuth app.",
+            "sensitive": true
+        },
+        {
+            "name": "OBOT_KEYCLOAK_AUTH_PROVIDER_ISSUER_URL",
+            "friendlyName": "Issuer URL",
+            "description": "Issuer URL for Keycloak. Should be https://{your-keycloak-domain}/auth/realms/{realm}",
+            "sensitive": false
+        },
+        {
+            "name": "OBOT_AUTH_PROVIDER_COOKIE_SECRET",
+            "friendlyName": "Cookie Secret",
+            "description": "Secret used to encrypt cookies. Must be a random string of length 16, 24, or 32.",
+            "sensitive": true,
+            "hidden": true
+        },
+        {
+            "name": "OBOT_AUTH_PROVIDER_EMAIL_DOMAINS",
+            "friendlyName": "Allowed E-Mail Domains",
+            "description": "Comma separated list of email domains that are allowed to authenticate with this provider. * is a special value that allows all domains.",
+            "sensitive": false
+        }
+    ],
+    "optionalEnvVars": [
+    	{
+			"name": "OBOT_AUTH_PROVIDER_TOKEN_REFRESH_DURATION",
+			"friendlyName": "Token Refresh Duration",
+			"description": "Time to wait before attempting to refresh auth tokens. Should be in a format like 1h1m1s. Default: 1h",
+			"sensitive": false
+		}
+	]
+}

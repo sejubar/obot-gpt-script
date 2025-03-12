@@ -1,4 +1,4 @@
 tools:
   authProviders:
-    github-auth-provider:
+    keycloak-auth-provider:
       reference: ./keycloak-auth-provider

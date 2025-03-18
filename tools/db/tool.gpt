@@ -1,0 +1,15 @@
+---
+Name: Database Query Executor
+Description: Execute SQL queries against a database
+Credential: ./credential
+Param: query: The SQL query to execute
+
+#!/usr/bin/env python3 ${GPTSCRIPT_TOOL_DIR}/db_query_executor.py
+
+---
+!metadata:*:category
+Database
+
+---
+!metadata:*:icon
+https://www.svgrepo.com/show/331714/database-generic.svg

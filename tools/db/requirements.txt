@@ -1,0 +1,4 @@
+SQLAlchemy==2.0.39
+cx_Oracle==8.3.0
+PyMySQL==1.1.1
+pymssql==2.3.2

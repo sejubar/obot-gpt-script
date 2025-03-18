@@ -2,3 +2,4 @@ tools:
   authProviders:
     keycloak-auth-provider:
       reference: ./keycloak-auth-provider
+      

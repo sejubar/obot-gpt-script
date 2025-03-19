@@ -65,7 +65,8 @@ python db/db_query_executor.py
 
 Python 3.x
 SQLAlchemy library
-PyODBC library (for MSSQL and Oracle)
+oracledb library (for Oracle)
+pymssql (for Sqlserver)
 psycopg2 library (for Postgres)
 mariadb library (for MariaDB)
 

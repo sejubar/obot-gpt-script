@@ -70,6 +70,12 @@ pymssql (for Sqlserver)
 psycopg2 library (for Postgres)
 mariadb library (for MariaDB)
 
+
+## Tests
+`python -m unittest tests/test_db_query_executor.py`
+
+`tests/quick_test.sh`
+     
 ## Contributing
 
 Contributions are welcome! If you'd like to add support for more databases or improve the tool's functionality, please submit a pull request.

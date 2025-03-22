@@ -1,6 +1,5 @@
----
 Name: Database Query Executor
-Description: Execute SQL queries against a database
+Description: Execute SQL queries against mysql, oracle, sqlsever, postgres databases
 Credential: ./credential
 Param: query: The SQL query to execute
 
